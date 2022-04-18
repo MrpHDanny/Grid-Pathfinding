@@ -43,7 +43,10 @@ public class Controller : MonoBehaviour
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             grid.SetTileValue(mousePos, grid.GetTileValue(mousePos)-1);
         }    
+    }
 
+    void Update()
+    {
         grid.DrawGrid();
     }
 
