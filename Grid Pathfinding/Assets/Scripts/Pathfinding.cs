@@ -79,11 +79,9 @@ public class Pathfinding : MonoBehaviour
             case "djikstra" :
                 return djikstra(startTile,finishTile);
                 break;
+            default:
+                return a_star(startTile, finishTile);
         }
-
-        
-
-        return djikstra(startTile,finishTile);
     }
 
     private bool a_star(Tile startTile, Tile finishTile)
